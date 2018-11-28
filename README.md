@@ -4,4 +4,5 @@
 ## 版本
 Django1.11.2  
 OpenCV3.4.2
-
+## 适用系统
+亲测Ubuntu和Windows10都可以。
