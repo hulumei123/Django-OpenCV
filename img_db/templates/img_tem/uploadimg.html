@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>程序设计竞赛证照系统</title>
+    <!--引入Bootstrap样式!-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">程序设计竞赛证照系统</h1>
+        <p class="text-center">上传本人图片</p>
+    </div>
+
+    <br/>
+    <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}    <!--必须有!-->
+        <label>请在下面上传参赛队员正面照片，照片名称为“学校_姓名”，注意：图片格式为.jpg或者.png</label>
+    <input type="file" name="image" >
+    <button type="submit">上传</button>
+    <br />
+    <br />
+
+    <h2 class="text-center">{{ result }}</h2>
+        <br />
+
+    <div class="text-center">
+        <a href="/show">查看已经上传的图片</a>
+    </div>
+    </form>
+</div>
+
+</body>
+</html>

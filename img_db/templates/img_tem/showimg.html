@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示</title>
+    <!--引入Bootstrap全局样式!-->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!--引入jquery文件!-->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--引入Bootstrap的JavaScript!-->
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">程序设计竞赛证照系统</h1>
+        <p class="text-center">下面是参赛队员已经上传的图片</p>
+
+    </div>
+
+    <div class="text-right">
+        <a href="/upload" >返回主页面</a>
+    </div>
+
+    <div class="text-center">
+        {% for image in imgs %}
+            <img src="{{ image.img.url }}" />
+            <h4>{{ image.name }}</h4>
+        <br />
+        <br />
+        {% endfor %}
+    </div>
+
+    <div class="text-right">
+        <a href="/upload" >返回主页面</a>
+    </div>
+
+</div>
+</body>
+</html>
