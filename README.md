@@ -12,5 +12,4 @@ OpenCV3.4.2
 3. 打开终端提示的url
 4. 浏览器输入url/upload/
 ## 逻辑步骤
-![image]  
-(https://github.com/hulumei123/Django-OpenCV/image_github/1.png )
+! [image] (https://github.com/hulumei123/Django-OpenCV/blob/master/image_github/1.png)
