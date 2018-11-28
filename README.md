@@ -11,3 +11,4 @@ OpenCV3.4.2
 2. 终端输入：python manage.py runserver
 3. 打开终端提示的url
 4. 浏览器输入url/upload/
+## 逻辑步骤
