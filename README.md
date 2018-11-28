@@ -6,3 +6,8 @@ Django1.11.2
 OpenCV3.4.2
 ## 适用系统
 亲测Ubuntu和Windows10都可以。
+## 操作方法
+1. 进入与manage.py同目录下
+2. 终端输入：python manage.py runserver
+3. 打开终端提示的url
+4. 浏览器输入url/upload/
